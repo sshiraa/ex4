@@ -5,8 +5,8 @@
 #ifndef EX4__SEARCHER_H_
 #define EX4__SEARCHER_H_
 
-template <T> class Searcher {
-    Solution search(Searchable<T> searchable);
-};
+//template <T> class Searcher {
+//    void search(Searchable<T> searchable);
+//};
 
 #endif //EX4__SEARCHER_H_

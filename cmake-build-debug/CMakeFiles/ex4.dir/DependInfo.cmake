@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/shira/ex4/MyTestClientHandler.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o"
   "/home/shira/ex4/main.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/main.cpp.o"
+  "/home/shira/ex4/mySerialServer.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/mySerialServer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

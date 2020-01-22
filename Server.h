@@ -1,6 +1,7 @@
 //
 // Created by shira on 12.1.2020.
 //
+
 #include <sys/socket.h>
 #include <string>
 #include <iostream>
@@ -9,14 +10,18 @@
 #include <thread>
 #include <pthread.h>
 
+
+
 #ifndef EX4__SERVER_H_
 #define EX4__SERVER_H_
 
 #include "ClientHandler.h"
-class Server {
- public:
-  int open(int port, ClientHandler c);
-  int stop();
-};
+namespace server_side {
+  class Server {
+   public:
+    virtual int open(int port, ClientHandler clientHandler) = 0;
+    virtual int stop() = 0;
+  };
+}
 
 #endif //EX4__SERVER_H_
