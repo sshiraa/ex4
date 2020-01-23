@@ -26,10 +26,6 @@ thread
 pthread.h
 -
 
-/home/shira/ex4/MyTestClientHandler.h
-ClientHandler.h
-/home/shira/ex4/ClientHandler.h
-
 /home/shira/ex4/Server.h
 sys/socket.h
 -
@@ -55,20 +51,26 @@ mySerialServer.h
 /home/shira/ex4/mySerialServer.h
 
 /home/shira/ex4/mySerialServer.cpp
-vector
--
-MyTestClientHandler.h
-/home/shira/ex4/MyTestClientHandler.h
+ClientHandler.h
+/home/shira/ex4/ClientHandler.h
 mySerialServer.h
 /home/shira/ex4/mySerialServer.h
+strings.h
+-
 
 /home/shira/ex4/mySerialServer.h
 Server.h
 /home/shira/ex4/Server.h
-MyTestClientHandler.h
-/home/shira/ex4/MyTestClientHandler.h
-vector
+stdio.h
 -
-thread
+stdlib.h
+-
+netdb.h
+-
+unistd.h
+-
+netinet/in.h
+-
+sys/socket.h
 -
 

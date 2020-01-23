@@ -27,18 +27,21 @@ class mySerialServer : public Server {
   bool active;
   //vector<thread> threadVector;
  public:
+  //ctor
   mySerialServer() {
     this->active = true;
     //put 0s in address
     bzero((char *) &this->address, sizeof(this->address));
   }
-  void readWriteProtocol(int  client_socket);
+
   virtual int open(int port, ClientHandler c);
   virtual int stop() {
     this->active = true;
-    close(this->socketfd);
+    close(this->socketfd);//closing the listening socket
   }
-  void *startThread(void* voidPtr);
+ // void readWriteProtocol(int client_socket);
+ // int accept(int socketfd);
+  void * handleThreadFunc(void* args);
 
 };
 

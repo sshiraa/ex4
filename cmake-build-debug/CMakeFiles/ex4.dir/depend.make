@@ -6,13 +6,11 @@ CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
 CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.h
 
 CMakeFiles/ex4.dir/main.cpp.o: ../ClientHandler.h
-CMakeFiles/ex4.dir/main.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/ex4.dir/main.cpp.o: ../Server.h
 CMakeFiles/ex4.dir/main.cpp.o: ../main.cpp
 CMakeFiles/ex4.dir/main.cpp.o: ../mySerialServer.h
 
 CMakeFiles/ex4.dir/mySerialServer.cpp.o: ../ClientHandler.h
-CMakeFiles/ex4.dir/mySerialServer.cpp.o: ../MyTestClientHandler.h
 CMakeFiles/ex4.dir/mySerialServer.cpp.o: ../Server.h
 CMakeFiles/ex4.dir/mySerialServer.cpp.o: ../mySerialServer.cpp
 CMakeFiles/ex4.dir/mySerialServer.cpp.o: ../mySerialServer.h

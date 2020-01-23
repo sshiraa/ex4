@@ -15,14 +15,49 @@ struct serverData {
 #include <strings.h>
 //#include "readWrite"
 //#include <vector>
+typedef void * (*THREADFUNCPTR)(void *);
 
+int accept(int socketfd) {
+  sockaddr_in clientSocket;
+  int clientLength;
+  // accepting a client
+  int clientSocketFd = ::accept(socketfd, (struct sockaddr *) &clientSocket,
+                                (socklen_t *) &clientLength);
+
+  if (clientSocketFd == -1) {
+    std::cerr << "Error accepting client" << std::endl;
+    return -4;
+  }
+  return clientSocketFd;
+  //reading from client
+  //thread thread1(&mySerialServer::readWriteProtocol, this, client_socket);
+  //thread thread1(&ClientHandler::handleClient, this->clientHandler, client_socket);
+  //this->threadVector.push_back(thread1);
+  //thread1.detach();
+}
+
+void *handleThreadFunc(void* args) {
+  struct serverData *serverData = (struct serverData *)args;
+  while (serverData->active) {
+    int id = accept(serverData->socketfd);
+    //readWrite
+    serverData->clientHandler.handleClient(id);//add clientSocket from readWrite
+    //setting timeout
+    struct timeval tv;
+    tv.tv_sec = 120;
+    if(setsockopt(serverData->socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char*) &tv, sizeof(tv)) < 0)
+      std::cerr << "setsockopt failed\n" << std::endl;
+  }
+  delete serverData;
+  return nullptr;
+}
 
 int mySerialServer::open(int port, ClientHandler clientHandler) {
   //create socket
   socketfd = socket(AF_INET, SOCK_STREAM, 0);
   if (socketfd == -1) {
     //error
-    std::cerr << "Could not create a socket"<<std::endl;
+    std::cerr << "Could not create a socket" << std::endl;
     return -1;
   }
 
@@ -43,16 +78,16 @@ int mySerialServer::open(int port, ClientHandler clientHandler) {
 
   //the actual bind command
   if (bind(socketfd, (struct sockaddr *) &this->address, sizeof(this->address)) == -1) {
-    std::cerr<<"Could not bind the socket to an IP"<<std::endl;
+    std::cerr << "Could not bind the socket to an IP" << std::endl;
     return -2;
   }
 
   //making socket listen to the port
   if (listen(socketfd, 1) == -1) { //can also set to SOMAXCON (max connections)
-    std::cerr<<"Error during listening command"<<std::endl;
+    std::cerr << "Error during listening command" << std::endl;
     return -3;
-  } else{
-    std::cout<<"Server is now listening ..."<<std::endl;
+  } else {
+    std::cout << "Server is now listening ..." << std::endl;
   }
 
   struct serverData *serverData;
@@ -65,42 +100,13 @@ int mySerialServer::open(int port, ClientHandler clientHandler) {
   pthread_create(&handleThread, nullptr, handleThreadFunc, serverData);
 
 //  this->threadStart(serverData);
-
-  while (true) {
-    // accepting a client
-    int client_socket = accept(socketfd, (struct sockaddr *) &address,
-                               (socklen_t *) &address);
-
-    if (client_socket == -1) {
-      std::cerr << "Error accepting client" << std::endl;
-      return -4;
-    }
-    //reading from client
-    //thread thread1(&mySerialServer::readWriteProtocol, this, client_socket);
-    //thread thread1(&ClientHandler::handleClient, this->clientHandler, client_socket);
-    //this->threadVector.push_back(thread1);
-    //thread1.detach();
-  }
-
-
-  close(socketfd); //closing the listening socket
   return 0;
-}
+}//end open func
 
-void * handleThreadFunc(void* args) {
-  struct serverData *serverData = (struct serverData *)args;
-  //readWrite
-  while (serverData->active) {
-    int id = accept(serverData->socketfd);
-    //readWrite
-    serverData->clientHandler.handleClient();//add clientSocket from readWrite
 
-    //setting timeout
-    struct timeval tv;
-    tv.tv_sec = 120;
-    setsockopt(serverData->socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char*) &tv, sizeof(tv));
-  }
-}
+
+//close(socketfd); //closing the listening socket
+
 
 /*
 void mySerialServer::acceptClient() {
