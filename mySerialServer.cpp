@@ -52,6 +52,13 @@ void *handleThreadFunc(void* args) {
   return nullptr;
 }
 
+void * mySerialServer::handleThread(void* args) {
+  struct serverData *serverData = (struct serverData *)args;
+  pthread_t pthread1;
+  pthread_create(&pthread1, nullptr, handleThreadFunc, serverData);
+  return 0;
+}
+
 int mySerialServer::open(int port, ClientHandler clientHandler) {
   //create socket
   socketfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -95,9 +102,10 @@ int mySerialServer::open(int port, ClientHandler clientHandler) {
   serverData->active = this->active;
   serverData->clientHandler = clientHandler;
   serverData->port = PORT;
+  this->handleThread(serverData);
+  //pthread_t handleThread;
+  //pthread_create(&handleThread, nullptr, handleThreadFunc, serverData);
 
-  pthread_t handleThread;
-  pthread_create(&handleThread, nullptr, handleThreadFunc, serverData);
 
 //  this->threadStart(serverData);
   return 0;

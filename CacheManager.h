@@ -5,9 +5,12 @@
 #ifndef EX4__CACHEMANAGER_H_
 #define EX4__CACHEMANAGER_H_
 
-template <class Problem, class Solution>
 class CacheManager {
-    Solution getSolution(Problem);
+ public:
+  virtual bool isExist(string problem)=0;
+  virtual void insertSolution(string solution, string problem)=0;
+  virtual string getSolution(string problem) = 0;
+  virtual ~CacheManager(){}
 };
 
 #endif //EX4__CACHEMANAGER_H_

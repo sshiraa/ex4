@@ -1,15 +1,37 @@
 //
 // Created by shira on 19.1.2020.
 //
-#include "ClientHandler.h"
+
 #ifndef EX4__MYTESTCLIENTHANDLER_H_
 #define EX4__MYTESTCLIENTHANDLER_H_
 
+#include "ClientHandler.h"
+#include "Solver.h"
+#include "CacheManager.h"
+#include <sys/socket.h>
+#include <unistd.h>
+//#include <string>
+//#include <vector>
+//#include <fstream>
+//#include <cstring>
+//#include <map>
+//#include <list>
+//#include <regex>
+
 class MyTestClientHandler : public ClientHandler {
  private:
-  char *reversString(const char* str);
+  Solver<string, string> *solver;
+  CacheManager *cacheManager;
+  //char *reversString(const char* str);
  public:
-  int handleClient(int clientSocket);
+//  MyTestClientHandler()= default;
+  MyTestClientHandler(Solver<string, string> *solver, CacheManager *cacheManager) : solver(solver), cacheManager(cacheManager){}
+  //string setInformation(IstreamReader *input);
+  virtual void handleClient(int clientSocket);
+  ~MyTestClientHandler(){
+    delete (solver);
+    delete (cacheManager);
+  }
 };
 
 #endif //EX4__MYTESTCLIENTHANDLER_H_

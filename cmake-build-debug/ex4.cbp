@@ -111,6 +111,12 @@
 		<Unit filename="/home/shira/ex4/Solver.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/home/shira/ex4/StringReverser.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/StringReverser.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/home/shira/ex4/main.cpp">
 			<Option target="ex4"/>
 		</Unit>

@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <strings.h>
 #include <netdb.h>
 #include <unistd.h>
 #include <netinet/in.h>
@@ -41,7 +42,8 @@ class mySerialServer : public Server {
   }
  // void readWriteProtocol(int client_socket);
  // int accept(int socketfd);
-  void * handleThreadFunc(void* args);
+  //void * handleThreadFunc(void* args);
+  void * handleThread(void* args);
 
 };
 
