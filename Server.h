@@ -19,7 +19,7 @@
 namespace server_side {
   class Server {
    public:
-    virtual int open(int port, ClientHandler clientHandler) = 0;
+    virtual int open(int port, ClientHandler *clientHandler) = 0;
     virtual int stop() = 0;
     virtual ~Server() {}
   };

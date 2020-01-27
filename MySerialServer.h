@@ -21,7 +21,7 @@ using namespace server_side;
 //#include <vector>
 //#include <thread>
 
-class mySerialServer : public Server {
+class MySerialServer : public Server {
  private:
   int socketfd; //, client_socket;
   sockaddr_in address;  //in means IP4////////////////////////////////////////
@@ -29,15 +29,15 @@ class mySerialServer : public Server {
   //vector<thread> threadVector;
  public:
   //ctor
-  mySerialServer() {
+  MySerialServer() {
     this->active = true;
     //put 0s in address
     bzero((char *) &this->address, sizeof(this->address));
   }
 
-  virtual int open(int port, ClientHandler c);
+  virtual int open(int port, ClientHandler *c);
   virtual int stop() {
-    this->active = true;
+    this->active = false;
     close(this->socketfd);//closing the listening socket
   }
  // void readWriteProtocol(int client_socket);

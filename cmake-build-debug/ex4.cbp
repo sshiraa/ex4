@@ -93,6 +93,24 @@
 		<Unit filename="/home/shira/ex4/ClientHandler.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/home/shira/ex4/FileCacheManager.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/FileCacheManager.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Main.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Main.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/MySerialServer.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/MySerialServer.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/home/shira/ex4/MyTestClientHandler.cpp">
 			<Option target="ex4"/>
 		</Unit>
@@ -115,15 +133,6 @@
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="/home/shira/ex4/StringReverser.h">
-			<Option target="ex4"/>
-		</Unit>
-		<Unit filename="/home/shira/ex4/main.cpp">
-			<Option target="ex4"/>
-		</Unit>
-		<Unit filename="/home/shira/ex4/mySerialServer.cpp">
-			<Option target="ex4"/>
-		</Unit>
-		<Unit filename="/home/shira/ex4/mySerialServer.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="/home/shira/ex4/CMakeLists.txt">

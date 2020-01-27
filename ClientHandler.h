@@ -14,6 +14,7 @@
 #ifndef EX4__CLIENTHANDLER_H_
 #define EX4__CLIENTHANDLER_H_
 #include <iostream>
+#include <ios>
 using namespace std;
 
 class ClientHandler {

@@ -9,13 +9,13 @@ struct serverData {
   int port;
   int socketfd;
   bool active;
-  ClientHandler clientHandler;
+  ClientHandler *clientHandler;
 };
-#include "mySerialServer.h"
+#include "MySerialServer.h"
 #include <strings.h>
 //#include "readWrite"
 //#include <vector>
-typedef void * (*THREADFUNCPTR)(void *);
+//typedef void * (*THREADFUNCPTR)(void *);
 
 int accept(int socketfd) {
   sockaddr_in clientSocket;
@@ -30,7 +30,7 @@ int accept(int socketfd) {
   }
   return clientSocketFd;
   //reading from client
-  //thread thread1(&mySerialServer::readWriteProtocol, this, client_socket);
+  //thread thread1(&MySerialServer::readWriteProtocol, this, client_socket);
   //thread thread1(&ClientHandler::handleClient, this->clientHandler, client_socket);
   //this->threadVector.push_back(thread1);
   //thread1.detach();
@@ -39,27 +39,32 @@ int accept(int socketfd) {
 void *handleThreadFunc(void* args) {
   struct serverData *serverData = (struct serverData *)args;
   while (serverData->active) {
+    //setting timeout
+    struct timeval tv;
+    tv.tv_sec = 10;
+    if(setsockopt(serverData->socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char*) &tv, sizeof(tv)) < 0)
+      std::cerr << "setsockopt failed\n" << std::endl;
     int id = accept(serverData->socketfd);
     //readWrite
-    serverData->clientHandler.handleClient(id);//add clientSocket from readWrite
-    //setting timeout
+    serverData->clientHandler->handleClient(id);//add clientSocket from readWrite
+/*    //setting timeout
     struct timeval tv;
     tv.tv_sec = 120;
     if(setsockopt(serverData->socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char*) &tv, sizeof(tv)) < 0)
-      std::cerr << "setsockopt failed\n" << std::endl;
+      std::cerr << "setsockopt failed\n" << std::endl;*/
   }
   delete serverData;
   return nullptr;
 }
 
-void * mySerialServer::handleThread(void* args) {
+void * MySerialServer::handleThread(void* args) {
   struct serverData *serverData = (struct serverData *)args;
   pthread_t pthread1;
   pthread_create(&pthread1, nullptr, handleThreadFunc, serverData);
   return 0;
 }
 
-int mySerialServer::open(int port, ClientHandler clientHandler) {
+int MySerialServer::open(int port, ClientHandler *clientHandler) {
   //create socket
   socketfd = socket(AF_INET, SOCK_STREAM, 0);
   if (socketfd == -1) {
@@ -71,7 +76,7 @@ int mySerialServer::open(int port, ClientHandler clientHandler) {
   //bind socket to IP address
   this->address.sin_family = AF_INET;
   this->address.sin_addr.s_addr = INADDR_ANY; //give me any IP allocated for my machine
-  this->address.sin_port = htons(PORT);
+  this->address.sin_port = htons(port);
 
   /*// we first need to create the sockaddr obj.
   sockaddr_in address; //in means IP4
@@ -97,11 +102,11 @@ int mySerialServer::open(int port, ClientHandler clientHandler) {
     std::cout << "Server is now listening ..." << std::endl;
   }
 
-  struct serverData *serverData;
+  struct serverData *serverData = new struct serverData;
   serverData->socketfd = this->socketfd;
   serverData->active = this->active;
   serverData->clientHandler = clientHandler;
-  serverData->port = PORT;
+  serverData->port = port;
   this->handleThread(serverData);
   //pthread_t handleThread;
   //pthread_create(&handleThread, nullptr, handleThreadFunc, serverData);
@@ -117,7 +122,7 @@ int mySerialServer::open(int port, ClientHandler clientHandler) {
 
 
 /*
-void mySerialServer::acceptClient() {
+void MySerialServer::acceptClient() {
   // accepting a client
   while (active) {
     client_socket = accept(socketfd, (struct sockaddr *) &address,
@@ -135,25 +140,25 @@ void mySerialServer::acceptClient() {
   }
 
 }
-mySerialServer* mySerialServer::operator()() {}
+MySerialServer* MySerialServer::operator()() {}
 
 
-mySerialServer::mySerialServer(){}
-  int mySerialServer::open(int port, ClientHandler *client_handler) {
+MySerialServer::MySerialServer(){}
+  int MySerialServer::open(int port, ClientHandler *client_handler) {
     clientHandler = client_handler;
     openConnection(port);
     active = true;
     //reading from client
-    thread thread1(&mySerialServer::acceptClient, this);//, socketfd);
+    thread thread1(&MySerialServer::acceptClient, this);//, socketfd);
     thread1.detach();
     //readFromClient(client_socket, &chronologicalSimAdd,leftDirection);
 
   }
-  int mySerialServer::stop() {
+  int MySerialServer::stop() {
     active = false;
   }
 
-  int mySerialServer::openConnection(int port) {
+  int MySerialServer::openConnection(int port) {
 //create socket
     socketfd = socket(AF_INET, SOCK_STREAM, 0);
     if (socketfd == -1) {

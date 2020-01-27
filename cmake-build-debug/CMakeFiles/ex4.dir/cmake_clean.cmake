@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ex4.dir/FileCacheManager.cpp.o"
+  "CMakeFiles/ex4.dir/Main.cpp.o"
+  "CMakeFiles/ex4.dir/MySerialServer.cpp.o"
   "CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o"
   "CMakeFiles/ex4.dir/StringReverser.cpp.o"
-  "CMakeFiles/ex4.dir/main.cpp.o"
-  "CMakeFiles/ex4.dir/mySerialServer.cpp.o"
   "ex4"
   "ex4.pdb"
 )

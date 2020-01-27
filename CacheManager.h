@@ -5,6 +5,8 @@
 #ifndef EX4__CACHEMANAGER_H_
 #define EX4__CACHEMANAGER_H_
 
+#include <string>
+using namespace std;
 class CacheManager {
  public:
   virtual bool isExist(string problem)=0;

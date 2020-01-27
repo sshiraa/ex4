@@ -22,11 +22,8 @@ class MyTestClientHandler : public ClientHandler {
  private:
   Solver<string, string> *solver;
   CacheManager *cacheManager;
-  //char *reversString(const char* str);
  public:
-//  MyTestClientHandler()= default;
   MyTestClientHandler(Solver<string, string> *solver, CacheManager *cacheManager) : solver(solver), cacheManager(cacheManager){}
-  //string setInformation(IstreamReader *input);
   virtual void handleClient(int clientSocket);
   ~MyTestClientHandler(){
     delete (solver);

@@ -57,31 +57,31 @@ include CMakeFiles/ex4.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ex4.dir/flags.make
 
-CMakeFiles/ex4.dir/main.cpp.o: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shira/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex4.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/main.cpp.o -c /home/shira/ex4/main.cpp
+CMakeFiles/ex4.dir/Main.cpp.o: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/Main.cpp.o: ../Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shira/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ex4.dir/Main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/Main.cpp.o -c /home/shira/ex4/Main.cpp
 
-CMakeFiles/ex4.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shira/ex4/main.cpp > CMakeFiles/ex4.dir/main.cpp.i
+CMakeFiles/ex4.dir/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/Main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shira/ex4/Main.cpp > CMakeFiles/ex4.dir/Main.cpp.i
 
-CMakeFiles/ex4.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shira/ex4/main.cpp -o CMakeFiles/ex4.dir/main.cpp.s
+CMakeFiles/ex4.dir/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/Main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shira/ex4/Main.cpp -o CMakeFiles/ex4.dir/Main.cpp.s
 
-CMakeFiles/ex4.dir/mySerialServer.cpp.o: CMakeFiles/ex4.dir/flags.make
-CMakeFiles/ex4.dir/mySerialServer.cpp.o: ../mySerialServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shira/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex4.dir/mySerialServer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/mySerialServer.cpp.o -c /home/shira/ex4/mySerialServer.cpp
+CMakeFiles/ex4.dir/MySerialServer.cpp.o: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shira/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ex4.dir/MySerialServer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/MySerialServer.cpp.o -c /home/shira/ex4/MySerialServer.cpp
 
-CMakeFiles/ex4.dir/mySerialServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/mySerialServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shira/ex4/mySerialServer.cpp > CMakeFiles/ex4.dir/mySerialServer.cpp.i
+CMakeFiles/ex4.dir/MySerialServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/MySerialServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shira/ex4/MySerialServer.cpp > CMakeFiles/ex4.dir/MySerialServer.cpp.i
 
-CMakeFiles/ex4.dir/mySerialServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/mySerialServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shira/ex4/mySerialServer.cpp -o CMakeFiles/ex4.dir/mySerialServer.cpp.s
+CMakeFiles/ex4.dir/MySerialServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/MySerialServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shira/ex4/MySerialServer.cpp -o CMakeFiles/ex4.dir/MySerialServer.cpp.s
 
 CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o: CMakeFiles/ex4.dir/flags.make
 CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o: ../MyTestClientHandler.cpp
@@ -109,23 +109,38 @@ CMakeFiles/ex4.dir/StringReverser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/StringReverser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shira/ex4/StringReverser.cpp -o CMakeFiles/ex4.dir/StringReverser.cpp.s
 
+CMakeFiles/ex4.dir/FileCacheManager.cpp.o: CMakeFiles/ex4.dir/flags.make
+CMakeFiles/ex4.dir/FileCacheManager.cpp.o: ../FileCacheManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shira/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ex4.dir/FileCacheManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ex4.dir/FileCacheManager.cpp.o -c /home/shira/ex4/FileCacheManager.cpp
+
+CMakeFiles/ex4.dir/FileCacheManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ex4.dir/FileCacheManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shira/ex4/FileCacheManager.cpp > CMakeFiles/ex4.dir/FileCacheManager.cpp.i
+
+CMakeFiles/ex4.dir/FileCacheManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ex4.dir/FileCacheManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shira/ex4/FileCacheManager.cpp -o CMakeFiles/ex4.dir/FileCacheManager.cpp.s
+
 # Object files for target ex4
 ex4_OBJECTS = \
-"CMakeFiles/ex4.dir/main.cpp.o" \
-"CMakeFiles/ex4.dir/mySerialServer.cpp.o" \
+"CMakeFiles/ex4.dir/Main.cpp.o" \
+"CMakeFiles/ex4.dir/MySerialServer.cpp.o" \
 "CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o" \
-"CMakeFiles/ex4.dir/StringReverser.cpp.o"
+"CMakeFiles/ex4.dir/StringReverser.cpp.o" \
+"CMakeFiles/ex4.dir/FileCacheManager.cpp.o"
 
 # External object files for target ex4
 ex4_EXTERNAL_OBJECTS =
 
-ex4: CMakeFiles/ex4.dir/main.cpp.o
-ex4: CMakeFiles/ex4.dir/mySerialServer.cpp.o
+ex4: CMakeFiles/ex4.dir/Main.cpp.o
+ex4: CMakeFiles/ex4.dir/MySerialServer.cpp.o
 ex4: CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o
 ex4: CMakeFiles/ex4.dir/StringReverser.cpp.o
+ex4: CMakeFiles/ex4.dir/FileCacheManager.cpp.o
 ex4: CMakeFiles/ex4.dir/build.make
 ex4: CMakeFiles/ex4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shira/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ex4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shira/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ex4"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ex4.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
