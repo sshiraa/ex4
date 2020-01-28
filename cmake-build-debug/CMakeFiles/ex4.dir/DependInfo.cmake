@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shira/ex4/FileCacheManager.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/FileCacheManager.cpp.o"
-  "/home/shira/ex4/Main.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Main.cpp.o"
-  "/home/shira/ex4/MySerialServer.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/MySerialServer.cpp.o"
-  "/home/shira/ex4/MyTestClientHandler.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o"
-  "/home/shira/ex4/StringReverser.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/StringReverser.cpp.o"
+  "C:/Users/linor/Desktop/ex4/FileCacheManager.cpp" "C:/Users/linor/Desktop/ex4/cmake-build-debug/CMakeFiles/ex4.dir/FileCacheManager.cpp.obj"
+  "C:/Users/linor/Desktop/ex4/Main.cpp" "C:/Users/linor/Desktop/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Main.cpp.obj"
+  "C:/Users/linor/Desktop/ex4/MySerialServer.cpp" "C:/Users/linor/Desktop/ex4/cmake-build-debug/CMakeFiles/ex4.dir/MySerialServer.cpp.obj"
+  "C:/Users/linor/Desktop/ex4/MyTestClientHandler.cpp" "C:/Users/linor/Desktop/ex4/cmake-build-debug/CMakeFiles/ex4.dir/MyTestClientHandler.cpp.obj"
+  "C:/Users/linor/Desktop/ex4/StringReverser.cpp" "C:/Users/linor/Desktop/ex4/cmake-build-debug/CMakeFiles/ex4.dir/StringReverser.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ex4.dir/FileCacheManager.cpp.o"
-  "CMakeFiles/ex4.dir/Main.cpp.o"
-  "CMakeFiles/ex4.dir/MySerialServer.cpp.o"
-  "CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o"
-  "CMakeFiles/ex4.dir/StringReverser.cpp.o"
-  "ex4"
+  "CMakeFiles/ex4.dir/FileCacheManager.cpp.obj"
+  "CMakeFiles/ex4.dir/Main.cpp.obj"
+  "CMakeFiles/ex4.dir/MySerialServer.cpp.obj"
+  "CMakeFiles/ex4.dir/MyTestClientHandler.cpp.obj"
+  "CMakeFiles/ex4.dir/StringReverser.cpp.obj"
+  "ex4.exe"
+  "ex4.exe.manifest"
+  "ex4.lib"
   "ex4.pdb"
 )
 
