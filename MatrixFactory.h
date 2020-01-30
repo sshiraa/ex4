@@ -11,7 +11,7 @@ private:
     static pair<int, int> parseCoordinates(const string &data);
     static vector<int> parseRow(const string &line);
     static string extractLastLine(vector<string> &input);	
-	static vector<string> splitInput(const string &input);
+    static vector<string> splitInput(const string &input);
 public:
     static Matrix createMatrix(string inputData);
 };
