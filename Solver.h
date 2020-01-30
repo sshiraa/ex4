@@ -4,7 +4,7 @@
 
 #ifndef EX4__SOLVER_H_
 #define EX4__SOLVER_H_
-
+//get problem and return solution
 template <class Problem, class Solution>
 class Solver{
  public:
