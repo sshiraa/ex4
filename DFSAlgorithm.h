@@ -18,6 +18,7 @@ private:
 
 public:
     DFSAlgorithm();
+    //search function
     string search(ISearchable<T>* searchable) {
         this->addToOpenList(searchable->getInitialState());
         //as long there is a node in the queue
@@ -32,6 +33,7 @@ public:
             if (!this->isInClosedList(currentNode)) {
                 this->closedList.push_back(currentNode);
             }
+            //vector of all successors of current node
             vector<State<T>*> successors = searchable->getPossibleNextStates(*currentNode);
             for (auto s: successors) {
                 if (!this->isInClosedList(s) && !this->isInOpenList(s)) {
@@ -42,11 +44,13 @@ public:
         //this->deleteAll();
         return "-1";
     }
+    //return true if an element in close list. else,return false
     bool isInClosedList(State<T>* checkIfInCloseList) {
         bool found = (std::find(closeList.begin(), closeList.end(), *checkIfInCloseList) != closeList.end());
         return found;
     }
     ~DFSAlgorithm();
+    //return the string of the way
     string backTrace(State<T>* current, State<T>* initialState) {
         string toReturn = "";
         stack <State<T>*> traceStack;
