@@ -19,6 +19,7 @@ private:
     int evaluatedNode;
 public:
     BFSAlgorithm();
+    //return the top element in list and delete him from the list
     State<T>* popqList() {
         evaluatedNode++;
         State<T>* n = this->q.top();
@@ -31,12 +32,14 @@ public:
         q.push(initialState);
         visitedNodes.push_back(initialState);
         while (!q.empty()) {
+        //the first element at qlist
             State<T>* s = popqList();
             visitedNodes.push_back(s);
             if (*s == (searchable->getGoalState())) {
                 string toReturn = backTrace(s,searchable->getInitialState);
                 return toReturn;
             }
+            //list of current's successors
             list<State<T>*> successorsList = searchable->getAllPossibleStates(s);
             int size = successorsList.size();
             for (State<T>* successor : successorsList) {
@@ -47,6 +50,7 @@ public:
             }
         }
     }
+    //return the solution string 
     string backTrace(State<T>* current, State<T>* initialState) {
         stack <State<T>*> traceStack;
         State<T> *tempState = current;
@@ -80,6 +84,7 @@ public:
         bool is_in = visitedNodes.find(element) != visitedNodes.end();
         return is_in;
     }
+    //get the num of node evaluated
     int getNumberOfNodeEvaluated() {
         return this->evaluatedNode;
     }
