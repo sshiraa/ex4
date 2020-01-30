@@ -7,6 +7,7 @@
 #include "State.h"
 #include <vector>
 using namespace std;
+//interface of all classes we can send to search function
  template <class T>
 class ISearchable {
      State<T> *getInitialState();
