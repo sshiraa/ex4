@@ -7,6 +7,7 @@
 #include "Matrix.h"
 #include <string>
 using namespace std;
+//interface implemented by all the algorithms functions
 template <class T,class Solution>
 class Isearcher {
 public:
