@@ -13,12 +13,14 @@ private:
     State<pair<int, int>> goalState;
 public:
     Matrix(State<pair<int, int>> state);
+    //coonstructor
     Matrix(const vector<vector<int>>& matrix, State<pair<int, int>>&initState, State<pair<int, int>> &goalState){
         this->mat = matrix;
         this->matrixSize = mat.size();
         this->initialState = initState;
         this->goalState = goalState;
     }
+    //getters
     virtual State<pair<int, int>> *getInitialState() {
         return &initialState;
     }
@@ -29,7 +31,7 @@ public:
         return matrixSize;
     }
     vector<State<pair<int, int>>*> getAllPossiblesStates(State<pair<int, int>> &curState);
-
+    //for AstarAlgorithm
     vector<State<pair<int, int>> *> getPossibleNextStates(State<pair<int, int>> &curState, State<pair<int, int>> &goal);
 };
 
