@@ -4,6 +4,7 @@
 
 #include <sstream>
 #include "MatrixFactory.h"
+//function create the matrix by the other functions at this class
 Matrix MatrixFactory::createMatrix(string input) {
     vector<string> parsedInput = splitInput(input);
     vector<vector<int>> matrix;
@@ -16,15 +17,17 @@ Matrix MatrixFactory::createMatrix(string input) {
         if (!line.empty())
             matrix.push_back(parseRow(line));
     }
+    //get the indexes of initial and goal states
     pair<int, int> initPair = parseCoordinates(initData);
     double costInit = matrix[initPair.first][initPair.second];
     pair<int, int> goalPair = parseCoordinates(goalData);
     double costGoal = matrix[goalPair.first][goalPair.second];
+    //call constructor of State class for building initial and goal States for the matrix 
     State<pair<int, int>> init = State<pair<int,int>>(initPair, costInit, NULL, NOT);
     State<pair<int, int>> goal = State<pair<int,int>>(goalPair, costGoal, NULL, NOT);
     return Matrix(matrix, init, goal);
 }
-
+//get line of matrix and parse to rows 
 vector<int> MatrixFactory::parseRow(const string &line) {
     vector<int> lineAsInt;
     string token;
@@ -41,7 +44,7 @@ string MatrixFactory::extractLastLine(vector<string> &input) {
     input.pop_back();
     return temp;
 }
-
+//return indexes of initial and goal states
 pair<int, int> MatrixFactory::parseCoordinates(const string &data) {
     string coordinate;
     int first, second;
@@ -52,7 +55,7 @@ pair<int, int> MatrixFactory::parseCoordinates(const string &data) {
     second = stoi(coordinate);
     return make_pair(first, second);
 }
-
+//return vector of strings:all string is line in matrix
 vector<string> MatrixFactory::splitInput(const string &input) {
     string temp;
     vector<string> result;
