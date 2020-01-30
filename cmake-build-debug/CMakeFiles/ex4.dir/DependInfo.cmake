@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/shira/ex4/FileCacheManager.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/FileCacheManager.cpp.o"
   "/home/shira/ex4/Main.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/Main.cpp.o"
+  "/home/shira/ex4/MyParallelServer.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/MyParallelServer.cpp.o"
   "/home/shira/ex4/MySerialServer.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/MySerialServer.cpp.o"
   "/home/shira/ex4/MyTestClientHandler.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/MyTestClientHandler.cpp.o"
   "/home/shira/ex4/StringReverser.cpp" "/home/shira/ex4/cmake-build-debug/CMakeFiles/ex4.dir/StringReverser.cpp.o"

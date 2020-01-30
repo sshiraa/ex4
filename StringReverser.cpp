@@ -4,23 +4,20 @@
 
 #include "StringReverser.h"
 #include <algorithm>
-#include <cstring>
+#include <iostream>
 
 string StringReverser::solve(string problem) {
-  reverse(problem.begin(), problem.end());
+  std::cout << problem << std::endl;
+  //reverse the string
+  problem = (string)reversString(problem);
+  std::cout << problem << std::endl;
   return problem;
 }
 
-
-
-/*
-char * reversString(const char* str) {
-  char *reversed;
-  int strLen = strlen(str);
-  for(int i = 0; i < strLen; i++) {
-    reversed[i] = str[strLen - i - 1];//reversed.append(1, str[i]);
-  }
-  reversed[strLen] = '\n';//adding '\n' at the end
-
-  return reversed;
-}*/
+string StringReverser::reversString(string str) {
+    int strLen = str.length();
+    // Swap character from edges to middle
+    for (int i = 0; i < strLen / 2; i++)
+      swap(str[i], str[strLen - i - 1]);
+  return str;
+}

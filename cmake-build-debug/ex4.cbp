@@ -105,6 +105,12 @@
 		<Unit filename="/home/shira/ex4/Main.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/home/shira/ex4/MyParallelServer.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/MyParallelServer.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/home/shira/ex4/MySerialServer.cpp">
 			<Option target="ex4"/>
 		</Unit>

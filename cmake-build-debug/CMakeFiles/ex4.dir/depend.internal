@@ -15,6 +15,11 @@ CMakeFiles/ex4.dir/Main.cpp.o
  /home/shira/ex4/Server.h
  /home/shira/ex4/Solver.h
  /home/shira/ex4/StringReverser.h
+CMakeFiles/ex4.dir/MyParallelServer.cpp.o
+ /home/shira/ex4/ClientHandler.h
+ /home/shira/ex4/MyParallelServer.cpp
+ /home/shira/ex4/MyParallelServer.h
+ /home/shira/ex4/Server.h
 CMakeFiles/ex4.dir/MySerialServer.cpp.o
  /home/shira/ex4/ClientHandler.h
  /home/shira/ex4/MySerialServer.cpp

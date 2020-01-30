@@ -41,7 +41,7 @@ void *handleThreadFunc(void* args) {
   while (serverData->active) {
     //setting timeout
     struct timeval tv;
-    tv.tv_sec = 10;
+    tv.tv_sec = 120;
     if(setsockopt(serverData->socketfd, SOL_SOCKET, SO_RCVTIMEO, (const char*) &tv, sizeof(tv)) < 0)
       std::cerr << "setsockopt failed\n" << std::endl;
     int id = accept(serverData->socketfd);

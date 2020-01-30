@@ -12,6 +12,8 @@ using namespace std;
 class StringReverser : public Solver<string, string> {
  public:
   virtual string solve(string);
+ private:
+  string reversString(string str);
 };
 
 

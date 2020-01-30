@@ -28,7 +28,7 @@ bool FileCacheManager::isExist(string problem) {
   return it != solutionMap.end();
 }
 
-void FileCacheManager::insertSolution(string solution, string problem) {
+void FileCacheManager::insertSolution(string problem, string solution) {
   pthread_mutex_lock(&mutex);
   solutionMap[problem]=solution;
   ofstream myfile;

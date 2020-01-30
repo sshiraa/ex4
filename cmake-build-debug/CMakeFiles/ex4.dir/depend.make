@@ -15,6 +15,11 @@ CMakeFiles/ex4.dir/Main.cpp.o: ../Server.h
 CMakeFiles/ex4.dir/Main.cpp.o: ../Solver.h
 CMakeFiles/ex4.dir/Main.cpp.o: ../StringReverser.h
 
+CMakeFiles/ex4.dir/MyParallelServer.cpp.o: ../ClientHandler.h
+CMakeFiles/ex4.dir/MyParallelServer.cpp.o: ../MyParallelServer.cpp
+CMakeFiles/ex4.dir/MyParallelServer.cpp.o: ../MyParallelServer.h
+CMakeFiles/ex4.dir/MyParallelServer.cpp.o: ../Server.h
+
 CMakeFiles/ex4.dir/MySerialServer.cpp.o: ../ClientHandler.h
 CMakeFiles/ex4.dir/MySerialServer.cpp.o: ../MySerialServer.cpp
 CMakeFiles/ex4.dir/MySerialServer.cpp.o: ../MySerialServer.h

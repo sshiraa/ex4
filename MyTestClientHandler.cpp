@@ -7,7 +7,7 @@ void MyTestClientHandler::handleClient ( int clientSocket ) {
   string problem = "";
   string solution;
   while(true) {
-    //reading from client
+    //reading from client to buffer
     char buffer[1024] = {0};
     int numRead = read(clientSocket, buffer, 1024);
     if (numRead > 0) {
@@ -15,10 +15,12 @@ void MyTestClientHandler::handleClient ( int clientSocket ) {
         char currentChar = buffer[i];
         if (currentChar == '\n') {
           if(problem.length() > 0) {
-            if(!problem.compare("end")) {
+            if(problem.compare("end")==0) {
+              //we reached the end
               close(clientSocket);
               return;
             }
+            //search for it in the cache
             if (cacheManager->isExist(problem)) {
               solution = cacheManager->getSolution(problem);
             } else {
@@ -26,14 +28,15 @@ void MyTestClientHandler::handleClient ( int clientSocket ) {
               cacheManager->insertSolution(problem, solution);
             }
             solution = solution + '\n';//add '\n' at the end
-            ssize_t size;
+
             //writing back to client
-            size = send(clientSocket, solution.c_str(), solution.length(), 0);
+            int size = send(clientSocket, solution.c_str(), solution.length(), 0);
             if (size < 0) {
               close(clientSocket);
               return;
             }
             problem = "";
+            solution = "";
           }
         } else problem += currentChar;
       }
