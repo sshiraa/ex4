@@ -1,0 +1,53 @@
+commit 08499d8e24baaa38d115d03a1bfe46319e94428e
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Sat Feb 1 23:13:52 2020 +0200
+
+    finish almost
+
+commit 5a56ffba637060224f9ad45d2262a1435e7a17d9
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Thu Jan 30 13:11:15 2020 +0200
+
+    a
+
+commit aa2e6e4012c25cd65643e3943fa1af19218c0a82
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Thu Jan 30 11:27:33 2020 +0200
+
+    new parallel and updates
+
+commit 191cc604abf81d6155dd118ff0fc70974a9aa7fb
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Mon Jan 27 23:58:20 2020 +0200
+
+    server working with client
+
+commit f0e4bfe6d7b9f0b43c2279149796c41a8d22b4eb
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Sun Jan 26 23:54:46 2020 +0200
+
+    update server side classes
+
+commit 097e6e73260183954a817b59d594cb6d0214dbba
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Thu Jan 23 12:01:25 2020 +0200
+
+    server ready
+
+commit 072e02f9c78f98a7669b26dc208045ec2dc8816f
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Wed Jan 22 02:26:01 2020 +0200
+
+    improve server
+
+commit e0cb44beb8f4c309dfb9ce852ad0c0471d6f04a6
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Sun Jan 19 21:51:51 2020 +0200
+
+    server and client handler updates
+
+commit c2fa7ad15acf540a8dd08ae88471bd576b2f3e73
+Author: sshiraa <sshiraa@gmail.com>
+Date:   Thu Jan 16 13:12:15 2020 +0200
+
+    start ex4 git
