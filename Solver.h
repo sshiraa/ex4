@@ -6,9 +6,14 @@
 #define EX4__SOLVER_H_
 
 template <class Problem, class Solution>
-class Solver{
- public:
-  virtual Solution solve(Problem problem) = 0;
+class Solver {
+public:
+
+	virtual Solution solve(Problem problem) = 0;
+
+	virtual ~Solver() {}
 };
+
+
 
 #endif //EX4__SOLVER_H_

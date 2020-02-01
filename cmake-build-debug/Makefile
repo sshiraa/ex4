@@ -123,6 +123,141 @@ ex4/fast:
 	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/build
 .PHONY : ex4/fast
 
+AstarAlgorithm.o: AstarAlgorithm.cpp.o
+
+.PHONY : AstarAlgorithm.o
+
+# target to build an object file
+AstarAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/AstarAlgorithm.cpp.o
+.PHONY : AstarAlgorithm.cpp.o
+
+AstarAlgorithm.i: AstarAlgorithm.cpp.i
+
+.PHONY : AstarAlgorithm.i
+
+# target to preprocess a source file
+AstarAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/AstarAlgorithm.cpp.i
+.PHONY : AstarAlgorithm.cpp.i
+
+AstarAlgorithm.s: AstarAlgorithm.cpp.s
+
+.PHONY : AstarAlgorithm.s
+
+# target to generate assembly for a file
+AstarAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/AstarAlgorithm.cpp.s
+.PHONY : AstarAlgorithm.cpp.s
+
+BFSAlgorithm.o: BFSAlgorithm.cpp.o
+
+.PHONY : BFSAlgorithm.o
+
+# target to build an object file
+BFSAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/BFSAlgorithm.cpp.o
+.PHONY : BFSAlgorithm.cpp.o
+
+BFSAlgorithm.i: BFSAlgorithm.cpp.i
+
+.PHONY : BFSAlgorithm.i
+
+# target to preprocess a source file
+BFSAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/BFSAlgorithm.cpp.i
+.PHONY : BFSAlgorithm.cpp.i
+
+BFSAlgorithm.s: BFSAlgorithm.cpp.s
+
+.PHONY : BFSAlgorithm.s
+
+# target to generate assembly for a file
+BFSAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/BFSAlgorithm.cpp.s
+.PHONY : BFSAlgorithm.cpp.s
+
+BestFirstSearch.o: BestFirstSearch.cpp.o
+
+.PHONY : BestFirstSearch.o
+
+# target to build an object file
+BestFirstSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/BestFirstSearch.cpp.o
+.PHONY : BestFirstSearch.cpp.o
+
+BestFirstSearch.i: BestFirstSearch.cpp.i
+
+.PHONY : BestFirstSearch.i
+
+# target to preprocess a source file
+BestFirstSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/BestFirstSearch.cpp.i
+.PHONY : BestFirstSearch.cpp.i
+
+BestFirstSearch.s: BestFirstSearch.cpp.s
+
+.PHONY : BestFirstSearch.s
+
+# target to generate assembly for a file
+BestFirstSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/BestFirstSearch.cpp.s
+.PHONY : BestFirstSearch.cpp.s
+
+CompareCost.o: CompareCost.cpp.o
+
+.PHONY : CompareCost.o
+
+# target to build an object file
+CompareCost.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/CompareCost.cpp.o
+.PHONY : CompareCost.cpp.o
+
+CompareCost.i: CompareCost.cpp.i
+
+.PHONY : CompareCost.i
+
+# target to preprocess a source file
+CompareCost.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/CompareCost.cpp.i
+.PHONY : CompareCost.cpp.i
+
+CompareCost.s: CompareCost.cpp.s
+
+.PHONY : CompareCost.s
+
+# target to generate assembly for a file
+CompareCost.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/CompareCost.cpp.s
+.PHONY : CompareCost.cpp.s
+
+DFSAlgorithm.o: DFSAlgorithm.cpp.o
+
+.PHONY : DFSAlgorithm.o
+
+# target to build an object file
+DFSAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/DFSAlgorithm.cpp.o
+.PHONY : DFSAlgorithm.cpp.o
+
+DFSAlgorithm.i: DFSAlgorithm.cpp.i
+
+.PHONY : DFSAlgorithm.i
+
+# target to preprocess a source file
+DFSAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/DFSAlgorithm.cpp.i
+.PHONY : DFSAlgorithm.cpp.i
+
+DFSAlgorithm.s: DFSAlgorithm.cpp.s
+
+.PHONY : DFSAlgorithm.s
+
+# target to generate assembly for a file
+DFSAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/DFSAlgorithm.cpp.s
+.PHONY : DFSAlgorithm.cpp.s
+
 FileCacheManager.o: FileCacheManager.cpp.o
 
 .PHONY : FileCacheManager.o
@@ -150,6 +285,60 @@ FileCacheManager.cpp.s:
 	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/FileCacheManager.cpp.s
 .PHONY : FileCacheManager.cpp.s
 
+Isearchable.o: Isearchable.cpp.o
+
+.PHONY : Isearchable.o
+
+# target to build an object file
+Isearchable.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Isearchable.cpp.o
+.PHONY : Isearchable.cpp.o
+
+Isearchable.i: Isearchable.cpp.i
+
+.PHONY : Isearchable.i
+
+# target to preprocess a source file
+Isearchable.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Isearchable.cpp.i
+.PHONY : Isearchable.cpp.i
+
+Isearchable.s: Isearchable.cpp.s
+
+.PHONY : Isearchable.s
+
+# target to generate assembly for a file
+Isearchable.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Isearchable.cpp.s
+.PHONY : Isearchable.cpp.s
+
+Isearcher.o: Isearcher.cpp.o
+
+.PHONY : Isearcher.o
+
+# target to build an object file
+Isearcher.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Isearcher.cpp.o
+.PHONY : Isearcher.cpp.o
+
+Isearcher.i: Isearcher.cpp.i
+
+.PHONY : Isearcher.i
+
+# target to preprocess a source file
+Isearcher.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Isearcher.cpp.i
+.PHONY : Isearcher.cpp.i
+
+Isearcher.s: Isearcher.cpp.s
+
+.PHONY : Isearcher.s
+
+# target to generate assembly for a file
+Isearcher.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Isearcher.cpp.s
+.PHONY : Isearcher.cpp.s
+
 Main.o: Main.cpp.o
 
 .PHONY : Main.o
@@ -176,6 +365,87 @@ Main.s: Main.cpp.s
 Main.cpp.s:
 	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Main.cpp.s
 .PHONY : Main.cpp.s
+
+Matrix.o: Matrix.cpp.o
+
+.PHONY : Matrix.o
+
+# target to build an object file
+Matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Matrix.cpp.o
+.PHONY : Matrix.cpp.o
+
+Matrix.i: Matrix.cpp.i
+
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
+MatrixFactory.o: MatrixFactory.cpp.o
+
+.PHONY : MatrixFactory.o
+
+# target to build an object file
+MatrixFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/MatrixFactory.cpp.o
+.PHONY : MatrixFactory.cpp.o
+
+MatrixFactory.i: MatrixFactory.cpp.i
+
+.PHONY : MatrixFactory.i
+
+# target to preprocess a source file
+MatrixFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/MatrixFactory.cpp.i
+.PHONY : MatrixFactory.cpp.i
+
+MatrixFactory.s: MatrixFactory.cpp.s
+
+.PHONY : MatrixFactory.s
+
+# target to generate assembly for a file
+MatrixFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/MatrixFactory.cpp.s
+.PHONY : MatrixFactory.cpp.s
+
+MyClientHandler.o: MyClientHandler.cpp.o
+
+.PHONY : MyClientHandler.o
+
+# target to build an object file
+MyClientHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/MyClientHandler.cpp.o
+.PHONY : MyClientHandler.cpp.o
+
+MyClientHandler.i: MyClientHandler.cpp.i
+
+.PHONY : MyClientHandler.i
+
+# target to preprocess a source file
+MyClientHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/MyClientHandler.cpp.i
+.PHONY : MyClientHandler.cpp.i
+
+MyClientHandler.s: MyClientHandler.cpp.s
+
+.PHONY : MyClientHandler.s
+
+# target to generate assembly for a file
+MyClientHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/MyClientHandler.cpp.s
+.PHONY : MyClientHandler.cpp.s
 
 MyParallelServer.o: MyParallelServer.cpp.o
 
@@ -258,6 +528,141 @@ MyTestClientHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/MyTestClientHandler.cpp.s
 .PHONY : MyTestClientHandler.cpp.s
 
+SearcherSolver.o: SearcherSolver.cpp.o
+
+.PHONY : SearcherSolver.o
+
+# target to build an object file
+SearcherSolver.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SearcherSolver.cpp.o
+.PHONY : SearcherSolver.cpp.o
+
+SearcherSolver.i: SearcherSolver.cpp.i
+
+.PHONY : SearcherSolver.i
+
+# target to preprocess a source file
+SearcherSolver.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SearcherSolver.cpp.i
+.PHONY : SearcherSolver.cpp.i
+
+SearcherSolver.s: SearcherSolver.cpp.s
+
+.PHONY : SearcherSolver.s
+
+# target to generate assembly for a file
+SearcherSolver.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SearcherSolver.cpp.s
+.PHONY : SearcherSolver.cpp.s
+
+SocketManager.o: SocketManager.cpp.o
+
+.PHONY : SocketManager.o
+
+# target to build an object file
+SocketManager.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SocketManager.cpp.o
+.PHONY : SocketManager.cpp.o
+
+SocketManager.i: SocketManager.cpp.i
+
+.PHONY : SocketManager.i
+
+# target to preprocess a source file
+SocketManager.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SocketManager.cpp.i
+.PHONY : SocketManager.cpp.i
+
+SocketManager.s: SocketManager.cpp.s
+
+.PHONY : SocketManager.s
+
+# target to generate assembly for a file
+SocketManager.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SocketManager.cpp.s
+.PHONY : SocketManager.cpp.s
+
+Solver.o: Solver.cpp.o
+
+.PHONY : Solver.o
+
+# target to build an object file
+Solver.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Solver.cpp.o
+.PHONY : Solver.cpp.o
+
+Solver.i: Solver.cpp.i
+
+.PHONY : Solver.i
+
+# target to preprocess a source file
+Solver.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Solver.cpp.i
+.PHONY : Solver.cpp.i
+
+Solver.s: Solver.cpp.s
+
+.PHONY : Solver.s
+
+# target to generate assembly for a file
+Solver.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/Solver.cpp.s
+.PHONY : Solver.cpp.s
+
+SolverAdapter.o: SolverAdapter.cpp.o
+
+.PHONY : SolverAdapter.o
+
+# target to build an object file
+SolverAdapter.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SolverAdapter.cpp.o
+.PHONY : SolverAdapter.cpp.o
+
+SolverAdapter.i: SolverAdapter.cpp.i
+
+.PHONY : SolverAdapter.i
+
+# target to preprocess a source file
+SolverAdapter.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SolverAdapter.cpp.i
+.PHONY : SolverAdapter.cpp.i
+
+SolverAdapter.s: SolverAdapter.cpp.s
+
+.PHONY : SolverAdapter.s
+
+# target to generate assembly for a file
+SolverAdapter.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/SolverAdapter.cpp.s
+.PHONY : SolverAdapter.cpp.s
+
+State.o: State.cpp.o
+
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) -f CMakeFiles/ex4.dir/build.make CMakeFiles/ex4.dir/State.cpp.s
+.PHONY : State.cpp.s
+
 StringReverser.o: StringReverser.cpp.o
 
 .PHONY : StringReverser.o
@@ -294,12 +699,42 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ex4"
 	@echo "... edit_cache"
+	@echo "... AstarAlgorithm.o"
+	@echo "... AstarAlgorithm.i"
+	@echo "... AstarAlgorithm.s"
+	@echo "... BFSAlgorithm.o"
+	@echo "... BFSAlgorithm.i"
+	@echo "... BFSAlgorithm.s"
+	@echo "... BestFirstSearch.o"
+	@echo "... BestFirstSearch.i"
+	@echo "... BestFirstSearch.s"
+	@echo "... CompareCost.o"
+	@echo "... CompareCost.i"
+	@echo "... CompareCost.s"
+	@echo "... DFSAlgorithm.o"
+	@echo "... DFSAlgorithm.i"
+	@echo "... DFSAlgorithm.s"
 	@echo "... FileCacheManager.o"
 	@echo "... FileCacheManager.i"
 	@echo "... FileCacheManager.s"
+	@echo "... Isearchable.o"
+	@echo "... Isearchable.i"
+	@echo "... Isearchable.s"
+	@echo "... Isearcher.o"
+	@echo "... Isearcher.i"
+	@echo "... Isearcher.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... Matrix.o"
+	@echo "... Matrix.i"
+	@echo "... Matrix.s"
+	@echo "... MatrixFactory.o"
+	@echo "... MatrixFactory.i"
+	@echo "... MatrixFactory.s"
+	@echo "... MyClientHandler.o"
+	@echo "... MyClientHandler.i"
+	@echo "... MyClientHandler.s"
 	@echo "... MyParallelServer.o"
 	@echo "... MyParallelServer.i"
 	@echo "... MyParallelServer.s"
@@ -309,6 +744,21 @@ help:
 	@echo "... MyTestClientHandler.o"
 	@echo "... MyTestClientHandler.i"
 	@echo "... MyTestClientHandler.s"
+	@echo "... SearcherSolver.o"
+	@echo "... SearcherSolver.i"
+	@echo "... SearcherSolver.s"
+	@echo "... SocketManager.o"
+	@echo "... SocketManager.i"
+	@echo "... SocketManager.s"
+	@echo "... Solver.o"
+	@echo "... Solver.i"
+	@echo "... Solver.s"
+	@echo "... SolverAdapter.o"
+	@echo "... SolverAdapter.i"
+	@echo "... SolverAdapter.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
 	@echo "... StringReverser.o"
 	@echo "... StringReverser.i"
 	@echo "... StringReverser.s"

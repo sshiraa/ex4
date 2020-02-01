@@ -87,10 +87,43 @@
 		<Unit filename="/home/shira/ex4">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/home/shira/ex4/AstarAlgorithm.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/AstarAlgorithm.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/BFSAlgorithm.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/BFSAlgorithm.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/BestFirstSearch.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/BestFirstSearch.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/home/shira/ex4/CacheManager.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/home/shira/ex4/ClientArguments.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/home/shira/ex4/ClientHandler.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/CompareCost.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/CompareCost.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/DFSAlgorithm.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/DFSAlgorithm.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="/home/shira/ex4/FileCacheManager.cpp">
@@ -99,10 +132,43 @@
 		<Unit filename="/home/shira/ex4/FileCacheManager.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/home/shira/ex4/IOManager.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Isearchable.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Isearchable.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Isearcher.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Isearcher.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/home/shira/ex4/Main.cpp">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="/home/shira/ex4/Main.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Matrix.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Matrix.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/MatrixFactory.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/MatrixFactory.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/MyClientHandler.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/MyClientHandler.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="/home/shira/ex4/MyParallelServer.cpp">
@@ -129,10 +195,40 @@
 		<Unit filename="/home/shira/ex4/Searcher.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/home/shira/ex4/SearcherSolver.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/SearcherSolver.h">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/home/shira/ex4/Server.h">
 			<Option target="ex4"/>
 		</Unit>
+		<Unit filename="/home/shira/ex4/ServerArguments.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/SocketManager.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/SocketManager.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/Solver.cpp">
+			<Option target="ex4"/>
+		</Unit>
 		<Unit filename="/home/shira/ex4/Solver.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/SolverAdapter.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/SolverAdapter.h">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/State.cpp">
+			<Option target="ex4"/>
+		</Unit>
+		<Unit filename="/home/shira/ex4/State.h">
 			<Option target="ex4"/>
 		</Unit>
 		<Unit filename="/home/shira/ex4/StringReverser.cpp">

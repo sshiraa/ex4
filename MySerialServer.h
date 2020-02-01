@@ -36,7 +36,7 @@ class MySerialServer : public Server {
   }
 
   virtual int open(int port, ClientHandler *c);
-  virtual int stop() {
+  virtual void stop() {
     this->active = false;
     close(this->socketfd);//closing the listening socket
   }
