@@ -25,8 +25,6 @@ public:
 		//Matrix m3 = MatrixFactory::createMatrix(problem);
 		//Matrix m4 = MatrixFactory::createMatrix(problem);
 		// matrixProblem = (MatrixFactory:: createMatrix(problem));
-		 //todo: need to change it to vector of pair<int, int> instead of string as solution
-		 //todo: maybe changing the return value of matrixProblem to vector of states instead of string
 		/*Isearcher<string, pair<int, int>> *bestFS = new  BFSAlgorithm<string, pair<int, int>>;
 		string result = bestFS->search(&m1);
 		cout <<"bestFs"+ result << endl<< endl<< endl;*/
